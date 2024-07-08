@@ -1,57 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
-    <link rel="stylesheet" href="index.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script src="index.js"></script>
-  </head>
-  <body>
-    <div class="cont">
-      <div class="cont1">
-        <div class="us1"></div>
-        <div class="user">
-          <button class="btn1">
-            <i class="fa-solid fa-envelope" style="color: #000000"></i>
-          </button>
-          <input
-            id="user1"
-            class="r1"
-            title="Username"
-            type="username"
-            placeholder="Username"
-          />
-        </div>
-        <br />
-        <div class="pass">
-          <button class="btn1">
-            <i class="fa-solid fa-lock"></i>
-          </button>
-          <input id="pass1" class="r1" type="password" placeholder="Password" />
-        </div>
-        <br />
-        <br />
-        <div class="check">
-          <div class="check1">
-            <input type="checkbox" id="rem" />
-            <label for="rem">Remember Me</label>
-          </div>
-          <a href="#" id="forgot">Forget Password?</a>
-        </div>
-        <br />
-        <br />
-        <input type="button" value="LOGIN" class="login1" />
-        <br />
-        <a href="regi.html">Don't have an account?</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="index.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="login-box">
+      <div class="user-icon"></div>
+      <div class="form-group">
+        <button class="icon-button"><i class="fas fa-envelope"></i></button>
+        <input id="username" class="input-field" type="text" placeholder="Username" />
       </div>
+      <div class="form-group">
+        <button class="icon-button"><i class="fas fa-lock"></i></button>
+        <input id="password" class="input-field" type="password" placeholder="Password" />
+      </div>
+      <div class="remember-forgot">
+        <label class="checkbox-container">Remember Me
+          <input type="checkbox" id="remember" />
+          <span class="checkmark"></span>
+        </label>
+        <a href="#" class="forgot-link">Forgot Password?</a>
+      </div>
+      <input type="button" value="LOGIN" class="login-button" />
+      <a href="regi.html" class="register-link">Don't have an account?</a>
     </div>
-  </body>
+  </div>
+</body>
 </html>
